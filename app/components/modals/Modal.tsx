@@ -1,6 +1,6 @@
 'use client';
 
-import { useEffect, useState, useCallback } from "react";
+import React, { useEffect, useState, useCallback } from "react";
 import { IoMdClose } from 'react-icons/io'
 import Button from "../Button";
 
@@ -110,6 +110,7 @@ const Modal: React.FC<ModalProps> = ({
                                 onClick={handleSubmit}
                             />
                             </div>
+                            {footer}
                         </div>
                     </div>
                 </div>
